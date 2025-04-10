@@ -1,0 +1,359 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1da1f2, #0d47a1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: slideUp 1s ease-out;
+}
+
+/* Heading */
+.container h2 {
+    color: #1da1f2;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Input Fields */
+.container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.container input:focus {
+    border-color: #1da1f2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(29, 161, 242, 0.3);
+}
+
+/* Button */
+.container button {
+    width: 100%;
+    background: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    background: #0d8ddb;
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+}
+form select {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: 0.3s ease;
+    appearance: none;
+  }
+  
+  form select:focus {
+    outline: none;
+    border-color: #1DA1F2;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(29, 161, 242, 0.5);
+  }
+/* Animated Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(-45deg, #1da1f2, #0f2027, #2c5364, #1da1f2);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Container for content */
+  .container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form styling */
+  form input,
+  form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  form input[type="submit"],
+  form button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover,
+  form button:hover {
+    background-color: #0d8ddc;
+  }
+/* --- Background Gradient Animation --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(-45deg, #1da1f2, #0f2027, #2c5364, #1da1f2);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* --- Animated Heading --- */
+  h1 {
+    text-align: center;
+    color: #1da1f2;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease forwards, glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #1da1f2; }
+    to { text-shadow: 0 0 25px #1da1f2; }
+  }
+  
+  /* --- Form Container --- */
+  .container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  /* --- Form Styling --- */
+  form input,
+  form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #1da1f2;
+    box-shadow: 0 0 8px rgba(29,161,242,0.5);
+  }
+  
+  form input[type="submit"],
+  form button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover,
+  form button:hover {
+    background-color: #0d8ddc;
+    transform: scale(1.05);
+  }
+  
+
+/* Basic Reset & Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Container for Form */
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    backdrop-filter: blur(6px);
+}
+
+/* Inputs and Labels */
+form input[type="text"], form input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #1DA1F2;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form input[type="submit"]:hover {
+    background-color: #0d8ddb;
+}
+
+/* Nebula Container & Balls */
+.nebula-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+.nebula {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.5;
+    animation: spin 40s linear infinite;
+}
+.ball1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(29, 161, 242, 0.6);
+    top: 10%;
+    left: 20%;
+    animation-duration: 60s;
+}
+.ball2 {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 153, 255, 0.4);
+    top: 50%;
+    left: 60%;
+    animation-duration: 80s;
+}
+.ball3 {
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 255, 204, 0.3);
+    top: 70%;
+    left: 30%;
+    animation-duration: 100s;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}

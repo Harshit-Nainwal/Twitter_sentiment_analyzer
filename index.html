@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitter Feed Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+   <!-- Nebula Animation Background -->
+   <div class="nebula-container">
+    <div class="nebula ball1"></div>
+    <div class="nebula ball2"></div>
+    <div class="nebula ball3"></div>
+</div>
+
+    <div class="container">
+      <h1>Twitter Feed Analyzer</h1>
+      <form method="POST">
+          <label>Select an option:</label><br>
+          <input type="radio" id="random" name="option" value="random" checked>
+          <label for="random">Fetch 10 random tweets with #python</label><br>
+          <input type="radio" id="specific" name="option" value="specific">
+          <label for="specific">Fetch recent tweet by username:</label>
+          <input type="text" name="username" placeholder="e.g., elonmusk"><br><br>
+          <input type="submit" value="Analyze Tweets">
+      </form>
+    </div>
+    <div class="floating-icons-container"></div>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #0d47a1, #1DA1F2);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            color: #333;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease;
+        }
+
+        h1 {
+            color: #1DA1F2;
+            text-align: center;
+        }
+
+        .tweet {
+            background-color: #f1f9ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 6px solid #1DA1F2;
+            border-radius: 8px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(40px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% else %}
+            {% if mode == "random" %}
+                <h3>Random #python Tweets:</h3>
+            {% elif mode == "specific" %}
+                <h3>Latest Tweet by {{ twitter_username }}:</h3>
+            {% endif %}
+
+            {% for tweet in tweets %}
+                <div class="tweet">
+                    <p><strong>Tweet:</strong> {{ tweet.text }}</p>
+                    <p><strong>Sentiment:</strong> {{ tweet.sentiment }}</p>
+                    <p><strong>Created At:</strong> {{ tweet.created_at }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>
