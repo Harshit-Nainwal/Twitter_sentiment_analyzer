@@ -1,8 +1,0 @@
-token: AAAAAAAAAAAAAAAAAAAAADggzgEAAAAA6JiawBCNo4da7fpF2dVkz8N18hE%3DijCTjPCrMHHbL6QMo4ZUZHsLni2K8bHfrEt7vp0rERE75fOLfI
-api key:d4VtD6iMmb9HFT5oaRXePo82U
-api key secret: 2X6iqAWfaYyGgxat36P4gHHSvwnXAcd59hEiDNWzFTj7CUHXfB
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-token: AAAAAAAAAAAAAAAAAAAAADPk0QEAAAAAx4yKu7epdOGHmsMB0lgJ0PsbMHc%3DqVKNjv1JgIrub3Sxg6YV2VzVUOMmd3UIzYY70kdySOAvm2e7Az
-api key: DMgUvCVLZYKpaKIo7EitNwlO8
-api key secret: FntL6YpN1MIHu6fjepDPMkXNe1A0XVaRJJ3Cyi1L6BsmYkirKF
